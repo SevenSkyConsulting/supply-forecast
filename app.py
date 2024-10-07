@@ -73,7 +73,7 @@ def main():
     data = load_data('sales_data.csv')
 
     # Assuming the CSV has columns: Date, Product1, Product2, ...
-    products = data.columns[1:]  # Exclude the 'Date' column
+    products = data.columns  # Exclude the 'Date' column
 
     for product in products:
         print(f"Forecasting for {product}")
